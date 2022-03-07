@@ -1,5 +1,4 @@
 provider "aws" {
-    akey = var.ACCESS_KEY
-    skey = var.SECRET_KEY
+    access_key = var.ACCESS_KEY
+    secret_key = var.SECRET_KEY
     region = var.REGION
-}
