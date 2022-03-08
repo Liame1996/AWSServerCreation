@@ -1,0 +1,8 @@
+TelecomsAutoScaling:
+  Type: AWS::AutoScaling::LaunchConfiguration
+  Properties:
+    ImageId: ami-02354e95b39ca8dec
+    SecurityGroups:
+    - Ref: TelcomsAutoScaling
+    - Telecoms_ProviderSecurityGroup
+    InstanceType: t2.micro
